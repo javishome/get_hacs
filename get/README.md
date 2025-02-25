@@ -1,6 +1,6 @@
 # Get HACS
 
-The easiest way to get HACS for Home Assistant.
+The easiest way to get HACS for Home Assistant JSH.
 
 > **This add-on does not run HACS. This add-on only provides the easiest way to download HACS.**
 
