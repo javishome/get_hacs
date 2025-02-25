@@ -34,7 +34,7 @@ elif bashio::var.equals "${CHANNEL}" "development"; then
     bash ./scripts/install/frontend
 
     bashio::log.info "Injecting a version..."
-    current_tag=$(curl -sSL https://bitbucket.org/javisco/58_javis_addons/src/master/hacs/integration/data.json | jq -r '.["172733314"].last_version')
+    current_tag=$(curl -sSL https://bitbucket.org/javisco/58_javis_addons/src/master/hacs/integration/data.json | jq -r '.["932091336"].last_version')
     current_commit="$(git rev-parse --short HEAD)"
     updated_version="$(echo ${current_tag} | awk -F. -v OFS=. '{$NF += 1 ; print}')-dev-${current_commit}"
     python3 ./scripts/update/manifest.py --version "${updated_version}"
