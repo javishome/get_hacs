@@ -7,7 +7,11 @@ startup: once
 boot: manual
 url: "https://github.com/javishome/get_hacs/tree/main/get"
 arch:
+  - armhf
+  - armv7
   - aarch64
+  - amd64
+  - i386
 init: false
 schema:
   channel: list(current|development)?
