@@ -14,7 +14,7 @@ if ! bashio::fs.directory_exists "/homeassistant/custom_components"; then
 fi
 
 if bashio::var.equals "${CHANNEL}" "current"; then
-    wget -O ./get-hacs https://bitbucket.org/javisco/58_javis_addons/raw/dev/hacs/get
+    wget -O ./get-hacs https://bitbucket.org/javisco/58_javis_addons/raw/master/hacs/get
     chmod +x ./get-hacs
     bash ./get-hacs
 
